@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<style type="text/css">
+div
+{
+   width:100px;
+   height:75px;
+   background-color:red;
+   border:1px solid black;
+}
+#div2
+{
+   transform:rotate(30deg);
+   -ms-transform:rotate(30deg); /* IE 9 */
+   -moz-transform:rotate(30deg); /* Firefox */
+   -webkit-transform:rotate(30deg); /* Safari and Chrome */
+   -o-transform:rotate(30deg); /* Opera */
+   background-color:yellow;
+}
+</style>
+</head>
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1792128941003567',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<img src="fr.jpg" />
+<div>SMARTAI!</div>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+<div id="div2">Smartai at your service</div>
+</body>
+</html>
